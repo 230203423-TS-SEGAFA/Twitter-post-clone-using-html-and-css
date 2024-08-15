@@ -1,0 +1,101 @@
+body {
+  background: #e6ecf0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.avator {
+  border-radius: 100px;
+  width: 58px;
+  margin-right: 25px;
+}
+
+.tweet-wrap {
+  background: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  box-sizing: border-box; 
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.tweet-header {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  margin-bottom: 14px; 
+}
+
+.tweet-header-info {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-header-info span {
+  color: #657786;
+  font-weight: normal;
+  margin-left: 1px;
+}
+
+.tweet-img-wrap {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweet-img {
+  object-fit: cover;
+  padding: 15px; 
+  height: calc(80vh - 10px); 
+  width: calc(700vw - 180px) 
+}
+
+.tweet-info-counts {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px; 
+}
+
+.tweet-info-counts div {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-info-counts div svg {
+  color: #657786;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 430px) {
+  .tweet-wrap {
+    padding: 15px; 
+    height: calc(100vh - 30px); /* Adjust based on padding */
+    width: calc(100vw - 30px); /* Adjust based on padding */
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: center; /* Center-align the content in column direction */
+  }
+
+  .tweet-header img {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .tweet-header-info p {
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+}
